@@ -96,6 +96,8 @@ body {
 .house_start_field2,
 .house_start_field3,
 .house_start_field4 {
+  position: relative;
+  z-index: 1;
   background-color: inherit;
   width: 30%;
   height: 30%;
@@ -257,14 +259,21 @@ body {
 #orange_piece2,
 #orange_piece3,
 #orange_piece4 {
-  z-index: 10;
-  cursor: move;
   position: absolute;
+  cursor: move;
   border-style: solid;
   border-color: black;
   border-radius: 100%;
   width: 25%;
   height: 25%;
+}
+
+.house1_pieces,
+.house2_pieces,
+.house3_pieces,
+.house4_pieces {
+  position: absolute;
+  z-index: 10;
 }
 
 #green_piece1,
