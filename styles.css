@@ -53,6 +53,14 @@ body {
   right: 0;
 }
 
+.house4_pieces,
+.house3_pieces,
+.house2_pieces,
+.house1_pieces {
+  width: 100%;
+  height: 100%;
+}
+
 .house_field1,
 .house_field2,
 .house_field3,
@@ -128,6 +136,15 @@ body {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
+.house2_pieces {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
 .house3 {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -135,12 +152,29 @@ body {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
+
+.house3_pieces {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 .house4 {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
   -o-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
+}
+
+.house4_pieces {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .path {
@@ -205,4 +239,133 @@ body {
 }
 .path_edge:nth-child(4) {
   transform: rotate(-90deg);
+}
+
+#green_piece1,
+#green_piece2,
+#green_piece3,
+#green_piece4,
+#red_piece1,
+#red_piece2,
+#red_piece3,
+#red_piece4,
+#blue_piece1,
+#blue_piece2,
+#blue_piece3,
+#blue_piece4,
+#orange_piece1,
+#orange_piece2,
+#orange_piece3,
+#orange_piece4 {
+  z-index: 10;
+  cursor: move;
+  position: absolute;
+  border-style: solid;
+  border-color: black;
+  border-radius: 100%;
+  width: 25%;
+  height: 25%;
+}
+
+#green_piece1,
+#green_piece2,
+#green_piece3,
+#green_piece4 {
+  background: #16ce16;
+}
+
+#red_piece1,
+#red_piece2,
+#red_piece3,
+#red_piece4 {
+  background: #fc4444;
+}
+
+#orange_piece1,
+#orange_piece2,
+#orange_piece3,
+#orange_piece4 {
+  background: #fcc153;
+}
+
+#blue_piece1,
+#blue_piece2,
+#blue_piece3,
+#blue_piece4 {
+  background: #3636e2;
+}
+
+#blue_piece1 {
+  top: 3vh;
+  left: 3vh;
+}
+
+#blue_piece2 {
+  top: 3vh;
+  right: 3vh;
+}
+
+#blue_piece3 {
+  bottom: 3vh;
+  left: 3vh;
+}
+#blue_piece4 {
+  bottom: 3vh;
+  right: 3vh;
+}
+
+#orange_piece1 {
+  top: 3vh;
+  left: 3vh;
+}
+#orange_piece2 {
+  top: 3vh;
+  right: 3vh;
+}
+#orange_piece3 {
+  bottom: 3vh;
+  left: 3vh;
+}
+#orange_piece4 {
+  bottom: 3vh;
+  right: 3vh;
+}
+
+#red_piece1 {
+  top: 3vh;
+  left: 3vh;
+}
+
+#red_piece2 {
+  top: 3vh;
+  right: 3vh;
+}
+
+#red_piece3 {
+  bottom: 3vh;
+  left: 3vh;
+}
+#red_piece4 {
+  bottom: 3vh;
+  right: 3vh;
+}
+
+#green_piece1 {
+  top: 3vh;
+  left: 3vh;
+}
+
+#green_piece2 {
+  top: 3vh;
+  right: 3vh;
+}
+
+#green_piece3 {
+  bottom: 3vh;
+  left: 3vh;
+}
+
+#green_piece4 {
+  bottom: 3vh;
+  right: 3vh;
 }
