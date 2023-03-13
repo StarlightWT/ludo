@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ludo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="board">
+      <div class="path">
+        <div class="path_edge">
+          <!-- left edge -->
+          <div class="path_row">
+            <div class="path_field">1</div>
+            <div class="path_field">2</div>
+            <div class="path_field">3</div>
+            <div class="path_field">4</div>
+            <div class="path_field">5</div>
+            <div class="path_field">6</div>
+          </div>
+          <div class="path_row">
+            <div class="house_field_blue">b1</div>
+            <div class="house_field_blue">b2</div>
+            <div class="house_field_blue">b3</div>
+            <div class="house_field_blue">b4</div>
+            <div class="house_field_blue">b5</div>
+            <div class="house_field_blue">b6</div>
+          </div>
+          <div class="path_row">
+            <div class="path_field">48</div>
+            <div class="path_field">47</div>
+            <div class="path_field">46</div>
+            <div class="path_field">45</div>
+            <div class="path_field">44</div>
+            <div class="path_field">43</div>
+          </div>
+        </div>
+        <div class="path_edge">
+          <!-- top edge -->
+          <div class="path_row">
+            <div class="path_field">13</div>
+            <div class="path_field">14</div>
+            <div class="path_field">15</div>
+            <div class="path_field">16</div>
+            <div class="path_field">17</div>
+            <div class="path_field">18</div>
+          </div>
+          <div class="path_row">
+            <div class="house_field_orange">o1</div>
+            <div class="house_field_orange">o2</div>
+            <div class="house_field_orange">o3</div>
+            <div class="house_field_orange">o4</div>
+            <div class="house_field_orange">o5</div>
+            <div class="house_field_orange">o6</div>
+          </div>
+          <div class="path_row">
+            <div class="path_field">12</div>
+            <div class="path_field">11</div>
+            <div class="path_field">10</div>
+            <div class="path_field">9</div>
+            <div class="path_field">8</div>
+            <div class="path_field">7</div>
+          </div>
+        </div>
+        <div class="path_edge">
+          <!-- right edge -->
+          <div class="path_row">
+            <div class="path_field">25</div>
+            <div class="path_field">26</div>
+            <div class="path_field">27</div>
+            <div class="path_field">28</div>
+            <div class="path_field">29</div>
+            <div class="path_field">30</div>
+          </div>
+          <div class="path_row">
+            <div class="house_field_green">g1</div>
+            <div class="house_field_green">g2</div>
+            <div class="house_field_green">g3</div>
+            <div class="house_field_green">g4</div>
+            <div class="house_field_green">g5</div>
+            <div class="house_field_green">g6</div>
+          </div>
+          <div class="path_row">
+            <div class="path_field">24</div>
+            <div class="path_field">23</div>
+            <div class="path_field">22</div>
+            <div class="path_field">21</div>
+            <div class="path_field">20</div>
+            <div class="path_field">19</div>
+          </div>
+        </div>
+        <div class="path_edge">
+          <!-- Bottom edge -->
+          <div class="path_row">
+            <div class="path_field">37</div>
+            <div class="path_field">38</div>
+            <div class="path_field">39</div>
+            <div class="path_field">40</div>
+            <div class="path_field">41</div>
+            <div class="path_field">42</div>
+          </div>
+          <div class="path_row">
+            <div class="house_field_red">r1</div>
+            <div class="house_field_red">r2</div>
+            <div class="house_field_red">r3</div>
+            <div class="house_field_red">r4</div>
+            <div class="house_field_red">r5</div>
+            <div class="house_field_red">r6</div>
+          </div>
+          <div class="path_row">
+            <div class="path_field">36</div>
+            <div class="path_field">35</div>
+            <div class="path_field">34</div>
+            <div class="path_field">33</div>
+            <div class="path_field">32</div>
+            <div class="path_field">31</div>
+          </div>
+        </div>
+      </div>
+      <div class="house1">
+        <div class="house_field1">1</div>
+        <div class="house_field2">2</div>
+        <div class="house_field3">3</div>
+        <div class="house_field4">4</div>
+        <div class="house_start_field1">
+          <h1>START</h1>
+        </div>
+      </div>
+      <div class="house2">
+        <div class="house_field1">1</div>
+        <div class="house_field2">2</div>
+        <div class="house_field3">3</div>
+        <div class="house_field4">4</div>
+        <div class="house_start_field2">
+          <h1>START</h1>
+        </div>
+      </div>
+      <div class="house3">
+        <div class="house_field1">1</div>
+        <div class="house_field2">2</div>
+        <div class="house_field3">3</div>
+        <div class="house_field4">4</div>
+        <div class="house_start_field3">
+          <h1>START</h1>
+        </div>
+      </div>
+      <div class="house4">
+        <div class="house_field1">1</div>
+        <div class="house_field2">2</div>
+        <div class="house_field3">3</div>
+        <div class="house_field4">4</div>
+        <div class="house_start_field4">
+          <h1>START</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

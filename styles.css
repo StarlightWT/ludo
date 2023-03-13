@@ -1,0 +1,208 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: burlywood;
+}
+
+.board {
+  position: relative;
+  background-color: #fffc5e;
+  width: 95vh;
+  height: 95vh;
+  border-color: black;
+  border-width: 1vh;
+  border-style: solid;
+}
+
+.house1,
+.house2,
+.house3,
+.house4 {
+  border-width: 1vh;
+  border-style: solid;
+  margin: 2vh;
+  border-radius: 100%;
+  background-color: red;
+  width: 20vh;
+  height: 20vh;
+}
+
+.house1 {
+  position: absolute;
+  background-color: blue;
+  top: 0;
+  left: 0;
+}
+.house2 {
+  position: absolute;
+  background-color: orange;
+  top: 0;
+  right: 0;
+}
+.house3 {
+  position: absolute;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+}
+.house4 {
+  position: absolute;
+  background-color: green;
+  bottom: 0;
+  right: 0;
+}
+
+.house_field1,
+.house_field2,
+.house_field3,
+.house_field4 {
+  position: absolute;
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  border-radius: 100%;
+  width: 25%;
+  height: 25%;
+}
+
+.house_field1 {
+  top: 3vh;
+  left: 3vh;
+}
+
+.house_field2 {
+  top: 3vh;
+  right: 3vh;
+}
+.house_field3 {
+  bottom: 3vh;
+  left: 3vh;
+}
+.house_field4 {
+  bottom: 3vh;
+  right: 3vh;
+}
+
+.house_start_field1,
+.house_start_field2,
+.house_start_field3,
+.house_start_field4 {
+  background-color: inherit;
+  width: 30%;
+  height: 30%;
+  border-color: black;
+  border-radius: 100%;
+  border-style: solid;
+  position: absolute;
+  top: 20vh;
+}
+
+.house_start_field1 h1,
+.house_start_field2 h1,
+.house_start_field3 h1,
+.house_start_field4 h1 {
+  color: white;
+  border-color: black;
+  font-size: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1.9vh;
+  text-indent: -5%;
+}
+
+.house_start_field1,
+.house_start_field2,
+.house_start_field3,
+.house_start_field4 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.house2 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.house3 {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.house4 {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.path {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.path_row {
+  display: flex;
+  gap: 1vh;
+  background-color: black;
+  padding: 1vh;
+  width: min-content;
+  margin-top: 39.5%;
+}
+
+.path_row:nth-child(2) {
+  margin-top: -1%;
+}
+.path_row:nth-child(3) {
+  margin-top: -1%;
+}
+
+.path_field,
+.house_field_blue,
+.house_field_red,
+.house_field_green,
+.house_field_orange {
+  background-color: white;
+  width: 5.3vh;
+  height: 5.3vh;
+}
+.house_field_blue {
+  color: white;
+  background-color: blue;
+}
+.house_field_orange {
+  color: white;
+  background-color: orange;
+}
+.house_field_red {
+  color: white;
+  background-color: red;
+}
+.house_field_green {
+  color: white;
+  background-color: green;
+}
+
+.path_edge {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.path_edge:nth-child(2) {
+  transform: rotate(90deg);
+}
+.path_edge:nth-child(3) {
+  transform: rotate(180deg);
+}
+.path_edge:nth-child(4) {
+  transform: rotate(-90deg);
+}
