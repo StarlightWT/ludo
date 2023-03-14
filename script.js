@@ -9,25 +9,13 @@ function makeDraggable(elmnt) {
     pos2 = 0,
     pos3 = 0,
     pos4 = 0;
-
-  let dragHandle = elmnt.getElementsByClassName("drag-handle")[0];
-
-  if (dragHandle !== undefined) {
-    // if present, the header is where you move the DIV from:
-    dragHandle.onmousedown = dragMouseDown;
-    dragHandle.ontouchstart = dragMouseDown; //added touch event
-  } else {
-    // otherwise, move the DIV from anywhere inside the DIV:
-    elmnt.onmousedown = dragMouseDown;
-    elmnt.ontouchstart = dragMouseDown; //added touch event
-  }
+  elmnt.onmousedown = dragMouseDown;
+  elmnt.ontouchstart = dragMouseDown;
 
   function dragMouseDown(e) {
     e = e || window.event;
     e.preventDefault();
 
-    //Get touch or click position
-    //https://stackoverflow.com/a/41993300/5078983
     if (
       e.type == "touchstart" ||
       e.type == "touchmove" ||
@@ -67,8 +55,6 @@ function makeDraggable(elmnt) {
     e = e || window.event;
     e.preventDefault();
 
-    //Get touch or click position
-    //https://stackoverflow.com/a/41993300/5078983
     if (
       e.type == "touchstart" ||
       e.type == "touchmove" ||
@@ -106,9 +92,9 @@ function makeDraggable(elmnt) {
     console.log("drag end x: " + pos3 + " y:" + pos4);
     // stop moving when mouse button is released:
     document.onmouseup = null;
-    document.ontouchcancel = null; //added touch event
-    document.ontouchend = null; //added touch event
+    document.ontouchcancel = null;
+    document.ontouchend = null;
     document.onmousemove = null;
-    document.ontouchmove = null; //added touch event
+    document.ontouchmove = null;
   }
 }
