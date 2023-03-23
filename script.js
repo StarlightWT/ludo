@@ -98,3 +98,14 @@ function makeDraggable(elmnt) {
     document.ontouchmove = null;
   }
 }
+
+//Die roll button
+document.getElementById("die").addEventListener("click", function () {
+  let h1 = document.getElementById("number");
+  this.innerText = "";
+  h1.style.display = "block";
+  for (let i = 0; i < 15; i++) {
+    let random = Math.floor(Math.random() * 6 + 1);
+    h1.innerText = random;
+  }
+});
